@@ -9,3 +9,17 @@ exports.getAll = async () => {
   const [rows] = await db.query("SELECT * FROM devices");
   return rows;
 };
+
+exports.getDevicesByHouse = async (houseId) => {
+  return [
+    { id: 1, name: 'Sensor nhiệt độ', houseId },
+    { id: 2, name: 'Sensor độ ẩm', houseId }
+  ];
+};
+
+exports.updateDevice = async (deviceId, body) => {
+  return {
+    id: deviceId,
+    ...body
+  };
+};

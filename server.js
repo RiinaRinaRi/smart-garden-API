@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require("dotenv").config();
 const express = require("express");
 const app = express();
@@ -11,7 +12,9 @@ app.use("/api/sensors", require("./routes/sensor.route"));
 app.use("/api/control", require("./routes/control.route"));
 app.use("/api/dashboard", require("./routes/dashboard.route"));
 app.use("/api/alerts", require("./routes/alert.route"));
+app.use('/v1/data', require('./routes/data.route'));
+app.use('/v1/house', require('./routes/house.route'));
 
 app.listen(process.env.PORT, () =>
-  console.log("Smart Garden API v1.1 running")
+  console.log("Smart Garden API running")
 );

@@ -1,7 +1,7 @@
 {
   "name": "smart-garden-api",
   "version": "1.1.0",
-  "description": "Smart Garden API with Alert & History",
+  "description": "Smart Garden API",
   "main": "server.js",
   "scripts": { "start": "node server.js" },
   "dependencies": {
