@@ -180,9 +180,6 @@ Các nhóm API chính:
 /api/history
 
 ## Mục đích sử dụng
-
-Bài tập lớn môn Công nghệ phần mềm
-
 Môn học IoT / Hệ thống nhúng
 
 Demo hệ thống Smart Garden / Smart Agriculture
