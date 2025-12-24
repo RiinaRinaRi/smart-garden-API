@@ -1,0 +1,14 @@
+{
+  "name": "smart-garden-api",
+  "version": "1.1.0",
+  "description": "Smart Garden API with Alert & History",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mqtt": "^5.3.0",
+    "mysql2": "^3.9.2"
+  }
+}

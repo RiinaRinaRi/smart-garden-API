@@ -1,0 +1,1 @@
+const r=require('express').Router();r.post('/login',(q,s)=>s.json({token:'demo'}));module.exports=r;
