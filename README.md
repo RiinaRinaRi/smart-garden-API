@@ -48,26 +48,6 @@ RESTful API
 
 Mô hình MVC
 
-## Cấu trúc thư mục
-        smart-garden-api/
-        │
-        ├── src/
-        │   ├── config/          # Cấu hình Database, MQTT
-        │   ├── controllers/     # Xử lý logic API
-        │   ├── routes/          # Định nghĩa các API endpoint
-        │   ├── services/        # MQTT, Alert, History service
-        │   ├── models/          # Làm việc với Database
-        │   ├── utils/           # Hàm tiện ích
-        │   └── app.js           # Khởi tạo Express App
-        │
-        ├── database/
-        │   └── schema.sql       # File tạo database & bảng
-        │
-        ├── .env.example         # File cấu hình môi trường mẫu
-        ├── server.js            # File chạy server
-        ├── package.json
-        └── README.md
-
 ## Các chức năng chính của API
 ### 1. Authentication
 
