@@ -1,4 +1,4 @@
-# SMART GARDEN – BACKEND API (NODE.JS)
+qq# SMART GARDEN – BACKEND API (NODE.JS)
 
 Backend API cho hệ thống **Smart Garden / Smart Agriculture**, phục vụ thu thập dữ liệu cảm biến, điều khiển thiết bị IoT, cảnh báo và lưu lịch sử hoạt động thông qua REST API kết hợp MQTT.
 
@@ -48,26 +48,6 @@ RESTful API
 
 Mô hình MVC
 
-## Cấu trúc thư mục
-        smart-garden-api/
-        │
-        ├── src/
-        │   ├── config/          # Cấu hình Database, MQTT
-        │   ├── controllers/     # Xử lý logic API
-        │   ├── routes/          # Định nghĩa các API endpoint
-        │   ├── services/        # MQTT, Alert, History service
-        │   ├── models/          # Làm việc với Database
-        │   ├── utils/           # Hàm tiện ích
-        │   └── app.js           # Khởi tạo Express App
-        │
-        ├── database/
-        │   └── schema.sql       # File tạo database & bảng
-        │
-        ├── .env.example         # File cấu hình môi trường mẫu
-        ├── server.js            # File chạy server
-        ├── package.json
-        └── README.md
-
 ## Các chức năng chính của API
 ### 1. Authentication
 
@@ -83,7 +63,7 @@ Dữ liệu được gửi qua MQTT
 
 Lưu vào cơ sở dữ liệu
 
-### 3. Control Device (Điều khiển thiết bị)
+### 3. Control House Device (Điều khiển thiết bị)
 
 Bật / tắt thiết bị (bơm nước, đèn, quạt…)
 
@@ -129,7 +109,7 @@ Bao gồm:
 
 ## Hướng dẫn cài đặt & chạy project
 ### Bước 1: Clone project
-git clone https://github.com/<username>/smart-garden-api.git
+git clone https://github.com/RiinaRinaRi/smart-garden-api.git
 cd smart-garden-api
 
 ### Bước 2: Cài đặt thư viện
@@ -166,6 +146,7 @@ npm start
 Server chạy tại:
 
 http://localhost:3000
+http://localhost:3000/api-docs
 
 ## Kiểm thử API
 

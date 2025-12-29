@@ -1,9 +1,13 @@
-const db = require("../config/db");
-exports.check = async (deviceId, data) => {
-  if (data.ph > 7) {
-    await db.query(
-      "INSERT INTO alerts(device_id, type, value) VALUES (?, 'PH_HIGH', ?)",
-      [deviceId, data.ph]
-    );
-  }
+const db = require('../config/db');
+
+const getAlertsByHouse = async (houseId) => {
+  const [rows] = await db.query(
+    'SELECT * FROM alerts WHERE house_id = ? ORDER BY created_at DESC',
+    [houseId]
+  );
+  return rows;
+};
+
+module.exports = {
+  getAlertsByHouse
 };
